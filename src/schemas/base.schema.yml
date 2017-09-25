@@ -1,0 +1,119 @@
+'$schema': http://json-schema.org/draft-04/schema#
+definitions: {}
+id: 'https://raw.githubusercontent.com/CoDiCC/sinave-schemas/master/dist/base.schema.yml'
+required:
+  - sinave_id
+  - caso_id
+type: object
+
+properties:
+  sinave_id:
+    id: '/properties/sinave_id'
+    title: SINAVE ID
+    description: Identificador único do registo no SINAVE
+    type: integer
+
+  caso_id:
+    id: '/properties/caso_id'
+    title: Caso ID
+    description: Identificador único do caso no SINAVE
+    type: integer
+
+  nome:
+    id: '/properties/nome'
+    title: Primeiro Nome
+    description: Primeiro nome do utente
+    type: string
+
+  apelido:
+    id: '/properties/apelido'
+    title: Apelido
+    description: Apelido do Utente
+    type: string
+
+  data_nascimento:
+    id: '/properties/data_nascimento'
+    title: Data de nascimento
+    description: Data de nascimento do utente
+    type: string
+
+  rnu_id:
+    id: '/properties/rnu_id'
+    title: Numero do Registo Nacional do Utente
+    description: Numero de SNS do Utente
+    type: integer
+
+  sexo:
+    id: '/properties/sexo'
+    title: Sexo
+    description: Sexo do utente
+    type: string
+    enum: ['Masculino', 'masculino', 'M', 'm', 'Feminino', 'feminino', 'F', 'f']
+
+  nacionalidade:
+    id: '/properties/nacionalidade'
+    title: Nacionalidade
+    description: Nacionalidade do utente
+    type: string
+    enum: *countryEnum
+
+  naturalidade:
+    id: '/properties/naturalidade'
+    title: Naturalidadade
+    description: Naturalidade do utente
+    type: string
+    enum: *countryEnum
+
+  data:
+    id: '/properties/data'
+    title: Data de Notificação
+    description: Data de Notificação do Caso
+    type: string
+    pattern: '^\d{4}-\d{2}-\d{2}$'
+
+  doenca:
+    id: '/properties/data'
+    title: 'Doença'
+    description: 'Doença a notificar'
+    type: string
+    # todo enum: acrescentar enum aqui
+
+  pais_ocorrencia:
+    id: '/properties/pais_ocorrencia'
+    title: Pais de Ocorrencia
+    description: 'País de ocorrência do caso'
+    type: string
+    enum: *countryEnum
+
+  distrito_ocorrencia:
+    id: '/properties/distrito_ocorrencia'
+    title: Distrito de Ocorrencia
+    description: 'Distrito de ocorrência do caso'
+    type: string
+    # todo enum: acrescentar enum aqui
+
+  concelho_ocorrencia:
+    id: '/properties/concelho_ocorrencia'
+    title: Concelho de Ocorrencia
+    description: 'Concelho de ocorrência do caso'
+    type: string
+    # todo enum: acrescentar enum aqui
+
+  freguesia_ocorrencia:
+    id: '/properties/freguesia_ocorrencia'
+    title: Freguesia de Ocorrencia
+    description: 'Freguesia de ocorrência do caso'
+    type: string
+    # todo enum: acrescentar enum aqui???? talvez nao
+
+  nuts_ocorrencia:
+    id: '/properties/nuts_ocorrencia'
+    title: NUTS de Ocorrencia
+    description: 'NUTS I de ocorrência do caso'
+    type: string
+
+  surto:
+    id: '/properties/surto'
+    title: Surto
+    description: 'Surto associado a este caso'
+    type: integer
