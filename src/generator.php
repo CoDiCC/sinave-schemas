@@ -95,4 +95,3 @@ function createYaml(array $schema, string $path)
 }
 
 recurseDirectories(realpath(__DIR__ . '/schemas'));
-

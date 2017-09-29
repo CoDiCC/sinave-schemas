@@ -12,5 +12,10 @@
       "name": "Estevão Soares dos Santos",
       "email": "estevao.santos@dgs.min-saude.pt"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "CoDiCC\\SinaveSchema\\": "src/"
+    }
+  }
 }
