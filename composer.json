@@ -1,5 +1,5 @@
 {
-  "name": "tivie/codicc-sinave-schemas",
+  "name": "codicc/sinave-schemas",
   "description": "A collection of schemas that represent the data structure of cases from SINAVE (PT Reporting System)",
   "type": "library",
   "require-dev": {
