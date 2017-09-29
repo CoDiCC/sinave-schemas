@@ -1,4 +1,4 @@
-countryEnum: &countryEnum
+'@countryEnum': &countryEnum
   - 'Afeganistão'
   - 'África do Sul'
   - 'Albânia'

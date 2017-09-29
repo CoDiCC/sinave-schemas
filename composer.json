@@ -1,15 +1,16 @@
 {
-    "name": "tivie/codicc-sinave-schemas",
-    "description": "A collection of schemas that represent the data structure of cases from SINAVE (PT Reporting System)",
-    "type": "library",
-    "require": {
-        "symfony/yaml": "^3.3"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Estevao Soares dos Santos",
-            "email": "estevao.santos@dgs.min-saude.pt"
-        }
-    ]
+  "name": "tivie/codicc-sinave-schemas",
+  "description": "A collection of schemas that represent the data structure of cases from SINAVE (PT Reporting System)",
+  "type": "library",
+  "require-dev": {
+    "symfony/yaml": "^3.3",
+    "phpunit/phpunit": "^6.3"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Estevão Soares dos Santos",
+      "email": "estevao.santos@dgs.min-saude.pt"
+    }
+  ]
 }

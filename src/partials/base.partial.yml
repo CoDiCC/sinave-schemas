@@ -1,12 +1,21 @@
-'$schema': http://json-schema.org/draft-04/schema#
-definitions: {}
-id: 'https://raw.githubusercontent.com/CoDiCC/sinave-schemas/master/dist/base.schema.yml'
-required:
-  - sinave_id
-  - caso_id
-type: object
+#
+# base.partial.yml
+#
+# CoDiCC - SINAVE Schemas <https://github.com/CoDiCC/sinave-schemas>
+# Sinave Schemas for Communicable Disease Case Classifier Library
+#
+# ---
+#
+# Copyright (C) 2017 Estevão Soares dos Santos - All Rights Reserved
+#
+# You may use, distribute and modify this code under the
+# terms of the MIT license.
+# You should have received a copy of the MIT license with
+# this file. If not, please write visit :
+# https://github.com/CoDiCC/sinave-schemas/blob/master/LICENSE
+#
 
-properties:
+'@baseProperties': &baseProperties
   sinave_id:
     id: '/properties/sinave_id'
     title: SINAVE ID
